@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Roboto;
   background-color: #191919;
+  width: auto;
 }
 
 html {
@@ -14,9 +15,10 @@ html {
   --menu-speed: 0.75s;
 }
 
+
 /* MENU STYLES */
 .menu-wrap {
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   z-index: 999999999;
@@ -166,7 +168,44 @@ html {
   #navbar {
     visibility: hidden;
   }
+
+  .icon-bar {
+    visibility: hidden;
+  }
+
+  .to-top {
+    visibility: hidden;
+  }
+
+  .about-left {
+    max-width: 100%;
+  }
+
+  .about-right {
+    max-width: 100%;
+  }
+
+  .ux-vertical-tabs .tabs {
+    border-right: none;
+  }
 }
+
+@media only screen and (min-width: 769px) {
+
+  .about-left {
+    max-width: 60%;
+  }
+
+  .about-right {
+    max-width: 40%;
+  }
+
+  .ux-vertical-tabs .tabs {
+    border-right: 2px solid #fff;
+  }
+}
+
+
 
 
 /************************ top navbar ************************/
@@ -341,7 +380,7 @@ img {
 
 .hello {
   color: rgba(255, 255, 255, 0.884);
-  font-size: 22px;
+  font-size: 20px;
   line-height: 200%;
   max-width: 70%;
 }
@@ -353,7 +392,7 @@ img {
 
 .titlebig {
   color: #3df487;
-  font-size: 80px;
+  font-size: 5vw;
   font-weight: bold;
 }
 
@@ -377,12 +416,9 @@ img {
   object-fit: cover;
 }
 
-.about-left {
-  max-width: 60%;
-}
+
 
 .about-right {
-  max-width: 40%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -519,7 +555,6 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  border-right: 2px solid #fff;
 }
 
 .ux-vertical-tabs .tabs button {
@@ -634,6 +669,7 @@ h4 {
 
 /****************** WORK **************************/
 
+
 .work_container h2:before {
   content: ".03";
   color: #3df487;
@@ -645,18 +681,14 @@ h4 {
 }
 
 .work_wrap {
-  margin: 50px auto 0 auto;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: space-around;
+  display: grid;
+  grid-gap: 20px;
 }
 
 .card_tile {
-  width: 330px;
-  height: 330px;
-  margin: 10px;
   background-color: #21e06d;
   display: inline-block;
   background-size: cover;
@@ -666,6 +698,55 @@ h4 {
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: white;
+}
+
+
+@media only screen and (min-width: 1384px) {
+  .work_wrap {
+    grid-template-columns: repeat(auto-fit, 330px);
+    grid-template-rows: repeat(2, 330px);
+  }
+
+  .card_tile {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+@media only screen and (min-width: 690px) and (max-width: 1383px) {
+  .work_wrap {
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-template-rows: repeat(2, 230px);
+  }
+
+  .card_tile {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+  .work_wrap {
+    grid-template-columns: repeat(auto-fit, 230px);
+    grid-template-rows: repeat(2, 230px);
+  }
+
+  .card_tile {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1382px) {
+  .work_wrap {
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(2, 300px);
+  }
+
+  .card_tile {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 .card_tile img {
@@ -678,6 +759,8 @@ h4 {
   transition: all 0.4s ease-out;
 }
 
+
+
 .card_tile .text {
   position: absolute;
   padding: 30px;
@@ -686,7 +769,7 @@ h4 {
 
 .card_tile h1 {
 
-  font-weight: 300;
+  font-weight: 200;
   margin: 0;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -699,7 +782,7 @@ h4 {
 }
 
 .card_tile p {
-  font-weight: 300;
+  font-weight: 200;
   margin: 20px 0 0 0;
   line-height: 25px;
   transform: translateX(-200px);
@@ -733,13 +816,6 @@ h4 {
 }
 
 
-
-@media (max-width: 1000px) {
-  .wrap {
-    flex-direction: column;
-    width: 400px;
-  }
-}
 
 
 
