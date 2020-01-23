@@ -1,4 +1,4 @@
-html {
+body {
   scroll-behavior: smooth;
   margin: 0;
   font-family: Roboto;
@@ -47,7 +47,7 @@ html {
 }
 
 /* Hamburger Line */
-.menu-wrap .hamburger > div {
+.menu-wrap .hamburger>div {
   position: relative;
   flex: none;
   width: 100%;
@@ -60,8 +60,8 @@ html {
 }
 
 /* Hamburger Lines - Top & Bottom */
-.menu-wrap .hamburger > div::before,
-.menu-wrap .hamburger > div::after {
+.menu-wrap .hamburger>div::before,
+.menu-wrap .hamburger>div::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -72,38 +72,38 @@ html {
 }
 
 /* Moves Line Down */
-.menu-wrap .hamburger > div::after {
+.menu-wrap .hamburger>div::after {
   top: 10px;
 }
 
 /* Toggler Animation */
-.menu-wrap .toggler:checked + .hamburger > div {
+.menu-wrap .toggler:checked+.hamburger>div {
   transform: rotate(135deg);
 }
 
 /* Turns Lines Into X */
-.menu-wrap .toggler:checked + .hamburger > div:before,
-.menu-wrap .toggler:checked + .hamburger > div:after {
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after {
   top: 0;
   transform: rotate(90deg);
 }
 
 /* Rotate On Hover When Checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
+.menu-wrap .toggler:checked:hover+.hamburger>div {
   transform: rotate(225deg);
 }
 
 /* Show Menu */
-.menu-wrap .toggler:checked ~ .menu {
+.menu-wrap .toggler:checked~.menu {
   visibility: visible;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div {
+.menu-wrap .toggler:checked~.menu>div {
   transform: scale(1);
   transition-duration: var(--menu-speed);
 }
 
-.menu-wrap .toggler:checked ~ .menu > div > div {
+.menu-wrap .toggler:checked~.menu>div>div {
   opacity: 1;
   transition: opacity 0.4s ease 0.4s;
 }
@@ -121,7 +121,7 @@ html {
   justify-content: center;
 }
 
-.menu-wrap .menu > div {
+.menu-wrap .menu>div {
   background: var(--overlay-color);
   border-radius: 50%;
   width: 200vw;
@@ -134,7 +134,7 @@ html {
   transition: all 0.4s ease;
 }
 
-.menu-wrap .menu > div > div {
+.menu-wrap .menu>div>div {
   text-align: center;
   max-width: 90vw;
   max-height: 100vh;
@@ -142,14 +142,14 @@ html {
   transition: opacity 0.4s ease;
 }
 
-.menu-wrap .menu > div > div > ul > li {
+.menu-wrap .menu>div>div>ul>li {
   list-style: none;
   color: #fff;
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
+.menu-wrap .menu>div>div>ul>li>a {
   color: inherit;
   text-decoration: none;
   transition: color 0.4s ease;
@@ -343,24 +343,23 @@ img {
 
 /*********************************** main section ***********************************/
 
-.flex-container {
+article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: rgba(255, 255, 255, 0.884);
   position: relative;
-  width: 100%;
   z-index: 99999;
   margin-top: -8vw;
 }
 
-.hello {
+.container-title {
   color: rgba(255, 255, 255, 0.884);
   max-width: 70%;
 }
 
-.hello p {
+.container-title p {
   font-size: 130%;
   line-height: 130%;
 }
@@ -384,7 +383,7 @@ img {
 .about_container {
   display: flex;
   -webkit-justify-content: center;
-  margin-top: 15vw;
+  margin-top: 20vw;
   justify-content: space-between;
   max-width: 70%;
   flex-flow: row wrap;
@@ -462,7 +461,7 @@ h2:after {
 
 /********** EXPERIENCE **************/
 
-.container h2:before {
+.container-exp h2:before {
   content: ".02";
   color: #3df487;
   margin-right: 10px;
@@ -472,10 +471,10 @@ h4 {
   color: rgba(255, 255, 255, 0.884);
 }
 
-.container {
+.container-exp {
   position: relative;
   max-width: 70%;
-  margin-top: 15vw;
+  margin-top: 20vw;
 }
 
 .ux-text h2 {
@@ -611,18 +610,20 @@ h4 {
 }
 
 .work_container {
-  margin-top: 15vw;
+  margin-top: 20vw;
+  max-width: 70%;
 }
 
 .work_wrap {
   justify-content: center;
   align-items: center;
   align-content: space-around;
-  display: grid;
-  grid-gap: 20px;
+  display: flex;
+  flex-flow: wrap;
 }
 
 .card_tile {
+  margin: 10px;
   background-color: #21e06d;
   display: inline-block;
   background-size: cover;
@@ -752,14 +753,13 @@ h4 {
 }
 
 .contact_container {
-  margin-top: 15vw;
+  margin-top: 20vw;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: space-around;
   text-align: center;
+  max-width: 70%;
 }
 
 .btn_contact {

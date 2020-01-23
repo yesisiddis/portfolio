@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -9,352 +9,403 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<header>
-    <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        <div class="menu">
-            <div>
+
+<body>
+    <header>
+        <div class="menu-wrap">
+            <input type="checkbox" class="toggler" />
+            <div class="hamburger">
+                <div></div>
+            </div>
+            <div class="menu">
                 <div>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="navbar">
-        <a href="#contact" class="contact_btn">Contact</a>
-        <a href="#work" class="work_btn">Work</a>
-        <a href="#experience" class="exp_btn">Experience</a>
-        <a href="#about" class="about_btn">About</a>
-    </div>
-</header>
-
-<div class="mountains_main">
-    <div class="mountains_img_right">
-        <img src="/images/mountains_right.png" class="img" alt="" />
-    </div>
-    <div class="mountains_img">
-        <img src="/images/mountains-full.png" class="img" alt="" />
-    </div>
-    <div class="wave"></div>
-    <div class="wave2"></div>
-</div>
-<div class="flex-container">
-    <div class="hello" data-aos="fade-right">
-        <p>Hi, my name is</p>
-        <p><span class="titlebig">João Paixão</span> and I'm a</p>
-        <p>
-            <span class="titlebig">Web Developer</span>
-        </p>
-        <p id="presentation">
-            Portuguese guy, based in Stavanger, Norway. I enjoy bacalao, fjords, northern lights and building
-            cool stuff for the Internet. I design and code. <span class="presentation_green">I learn and thrive.</span>
-        </p>
-    </div>
-    <a id="about"></a>
-    <div class="about_container" data-aos="slide-up">
-        <div class="about-left">
-            <h2>About</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum mauris ligula, in
-                    ornare risus malesuada ac. Curabitur ligula turpis, consectetur ut quam vel, sollicitudin
-                    tincidunt orci. Fusce laoreet varius nulla, vitae aliquam enim
-                    tempus quis. Praesent sit amet risus mi.</li>
-                <li>Nullam hendrerit dui bibendum mi vestibulum rutrum. Vivamus sed pharetra tortor. Suspendisse
-                    feugiat diam sagittis sodales sollicitudin.</li>
-                <li> Cras felis sem, feugiat quis imperdiet vitae, aliquet vel eros. Duis cursus nulla ac leo
-                    bibendum, vitae sagittis tellus pulvinar. Maecenas tempus diam sit amet ipsum interdum,
-                    vitae lobortis turpis facilisis. Vivamus neque velit, facilisis
-                    in vestibulum porta, convallis tempor est. Praesent volutpat maximus orci, in viverra mauris
-                    vehicula id. Nulla condimentum convallis feugiat. Vivamus aliquet aliquet ullamcorper.
-                    Vivamus non auctor metus.</li>
-            </ul>
-            <ul class="about-ul-skills">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>ReactJS</li>
-                <li>PHP</li>
-                <li>NodeJS</li>
-                <li>MySQL</li>
-                <li>UI/UX</li>
-                <li>C#</li>
-            </ul>
-        </div>
-        <div class="about-right">
-            <div class="profile_pic">
-                <img src="/images/profile.png" style="border-radius: 100%" class="profile_img" alt="" />
-            </div>
-        </div>
-
-    </div>
-
-
-    <a id="experience"></a>
-    <div class="container" data-aos="slide-up">
-        <h2>Experience</h2>
-
-        <div class="ux-vertical-tabs">
-            <div class="tabs">
-                <button data-tab="tab1" class="active">Tab Example 01</button>
-                <button data-tab="tab2">Tab Example 02</button>
-                <button data-tab="tab3">Tab Example 03</button>
-                <button data-tab="tab4">Tab Example 04</button>
-                <button class="empty"></button>
-            </div>
-            <div class="maincontent">
-                <div data-tab="tab1" class="tabcontent active">
-                    <div class="ux-text">
-                        <h4>Example Title 01</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis aliquet
-                            lectus eget pharetra. Nam feugiat vel nisi sit amet scelerisque. Pellentesque ut
-                            nibh ante. Donec malesuada ipsum id ex hendrerit pulvinar. Pellentesque
-                            ac neque libero. Curabitur ultricies ante quis magna congue efficitur. Orci
-                            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                            mus. Maecenas consequat elit in mattis feugiat. Aenean tellus risus, accumsan
-                            sed ligula id, mattis mattis enim. Suspendisse potenti. Ut felis nisl,
-                            ullamcorper id ipsum et, vulputate bibendum nisl.</p>
-
-                        <p>Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl imperdiet egestas.
-                            Vivamus at tristique arcu, ut consequat libero. Donec risus arcu, dapibus non
-                            erat sit amet, consequat accumsan tortor. Fusce facilisis erat ante, ac mattis
-                            erat rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc scelerisque
-                            augue ut urna pharetra placerat. Nunc volutpat metus sed faucibus feugiat. Duis
-                            in elit mauris. Pellentesque vel sem ipsum. Nunc et felis ultricies, euismod
-                            nisi eget, consectetur mi. Phasellus gravida nulla vel venenatis molestie.
-                            Maecenas porta nulla vulputate, tristique urna id, aliquam lorem. Nam vitae
-                            sodales lacus. Morbi imperdiet faucibus nisl, a laoreet leo posuere vitae.
-                            Pellentesque
-                            convallis ex tincidunt velit mattis, blandit aliquet dui iaculis.</p>
-                    </div>
-                </div>
-
-                <div data-tab="tab2" class="tabcontent">
-                    <div class="ux-text">
-                        <h4>Example Title 02</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis aliquet
-                            lectus eget pharetra. Nam feugiat vel nisi sit amet scelerisque. Pellentesque ut
-                            nibh ante. Donec malesuada ipsum id ex hendrerit pulvinar. Pellentesque
-                            ac neque libero. Curabitur ultricies ante quis magna congue efficitur. Orci
-                            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                            mus. Maecenas consequat elit in mattis feugiat. Aenean tellus risus, accumsan
-                            sed ligula id, mattis mattis enim. Suspendisse potenti. Ut felis nisl,
-                            ullamcorper id ipsum et, vulputate bibendum nisl.</p>
-
-                        <p>Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl imperdiet egestas.
-                            Vivamus at tristique arcu, ut consequat libero. Donec risus arcu, dapibus non
-                            erat sit amet, consequat accumsan tortor. Fusce facilisis erat ante, ac mattis
-                            erat rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc scelerisque
-                            augue ut urna pharetra placerat. Nunc volutpat metus sed faucibus feugiat. Duis
-                            in elit mauris. Pellentesque vel sem ipsum. Nunc et felis ultricies, euismod
-                            nisi eget, consectetur mi. Phasellus gravida nulla vel venenatis molestie.
-                            Maecenas porta nulla vulputate, tristique urna id, aliquam lorem. Nam vitae
-                            sodales lacus. Morbi imperdiet faucibus nisl, a laoreet leo posuere vitae.
-                            Pellentesque
-                            convallis ex tincidunt velit mattis, blandit aliquet dui iaculis.</p>
-                    </div>
-                </div>
-
-                <div data-tab="tab3" class="tabcontent">
-                    <div class="ux-text">
-                        <h4>Example Title 03</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis aliquet
-                            lectus eget pharetra. Nam feugiat vel nisi sit amet scelerisque. Pellentesque ut
-                            nibh ante. Donec malesuada ipsum id ex hendrerit pulvinar. Pellentesque
-                            ac neque libero. Curabitur ultricies ante quis magna congue efficitur. Orci
-                            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                            mus. Maecenas consequat elit in mattis feugiat. Aenean tellus risus, accumsan
-                            sed ligula id, mattis mattis enim. Suspendisse potenti. Ut felis nisl,
-                            ullamcorper id ipsum et, vulputate bibendum nisl.</p>
-
-                        <p>Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl imperdiet egestas.
-                            Vivamus at tristique arcu, ut consequat libero. Donec risus arcu, dapibus non
-                            erat sit amet, consequat accumsan tortor. Fusce facilisis erat ante, ac mattis
-                            erat rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc scelerisque
-                            augue ut urna pharetra placerat. Nunc volutpat metus sed faucibus feugiat. Duis
-                            in elit mauris. Pellentesque vel sem ipsum. Nunc et felis ultricies, euismod
-                            nisi eget, consectetur mi. Phasellus gravida nulla vel venenatis molestie.
-                            Maecenas porta nulla vulputate, tristique urna id, aliquam lorem. Nam vitae
-                            sodales lacus. Morbi imperdiet faucibus nisl, a laoreet leo posuere vitae.
-                            Pellentesque
-                            convallis ex tincidunt velit mattis, blandit aliquet dui iaculis.</p>
-                    </div>
-                </div>
-
-                <div data-tab="tab4" class="tabcontent">
-                    <div class="ux-text">
-                        <h4>Example Title 04</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis aliquet
-                            lectus eget pharetra. Nam feugiat vel nisi sit amet scelerisque. Pellentesque ut
-                            nibh ante. Donec malesuada ipsum id ex hendrerit pulvinar. Pellentesque
-                            ac neque libero. Curabitur ultricies ante quis magna congue efficitur. Orci
-                            varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                            mus. Maecenas consequat elit in mattis feugiat. Aenean tellus risus, accumsan
-                            sed ligula id, mattis mattis enim. Suspendisse potenti. Ut felis nisl,
-                            ullamcorper id ipsum et, vulputate bibendum nisl.</p>
-
-                        <p>Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl imperdiet egestas.
-                            Vivamus at tristique arcu, ut consequat libero. Donec risus arcu, dapibus non
-                            erat sit amet, consequat accumsan tortor. Fusce facilisis erat ante, ac mattis
-                            erat rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc scelerisque
-                            augue ut urna pharetra placerat. Nunc volutpat metus sed faucibus feugiat. Duis
-                            in elit mauris. Pellentesque vel sem ipsum. Nunc et felis ultricies, euismod
-                            nisi eget, consectetur mi. Phasellus gravida nulla vel venenatis molestie.
-                            Maecenas porta nulla vulputate, tristique urna id, aliquam lorem. Nam vitae
-                            sodales lacus. Morbi imperdiet faucibus nisl, a laoreet leo posuere vitae.
-                            Pellentesque
-                            convallis ex tincidunt velit mattis, blandit aliquet dui iaculis.</p>
+                    <div>
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <div id="navbar">
+            <a href="#contact" class="contact_btn">Contact</a>
+            <a href="#work" class="work_btn">Work</a>
+            <a href="#experience" class="exp_btn">Experience</a>
+            <a href="#about" class="about_btn">About</a>
+        </div>
+    </header>
 
+    <div class="mountains_main">
+        <div class="mountains_img_right">
+            <img src="/images/mountains_right.png" class="img" alt="" />
+        </div>
+        <div class="mountains_img">
+            <img src="/images/mountains-full.png" class="img" alt="" />
+        </div>
+        <div class="wave"></div>
+        <div class="wave2"></div>
+    </div>
+    <article>
+        <div class="container-title" data-aos="fade-right">
+            <p>Hi, my name is</p>
+            <p><span class="titlebig">João Paixão</span> and I'm a</p>
+            <p>
+                <span class="titlebig">Web Developer</span>
+            </p>
+            <p id="presentation">
+                Portuguese guy, based in Stavanger, Norway. I enjoy bacalao, fjords,
+                northern lights and building cool stuff for the Internet. I design and
+                code. <span class="presentation_green">I learn and thrive.</span>
+            </p>
+        </div>
+    </article>
+    <article>
+        <a id="about"></a>
+        <div class="about_container" data-aos="slide-up">
+            <div class="about-left">
+                <h2>About</h2>
+                <ul>
+                    <li>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                        dictum mauris ligula, in ornare risus malesuada ac. Curabitur
+                        ligula turpis, consectetur ut quam vel, sollicitudin tincidunt
+                        orci. Fusce laoreet varius nulla, vitae aliquam enim tempus quis.
+                        Praesent sit amet risus mi.
+                    </li>
+                    <li>
+                        Nullam hendrerit dui bibendum mi vestibulum rutrum. Vivamus sed
+                        pharetra tortor. Suspendisse feugiat diam sagittis sodales
+                        sollicitudin.
+                    </li>
+                    <li>
+                        Cras felis sem, feugiat quis imperdiet vitae, aliquet vel eros.
+                        Duis cursus nulla ac leo bibendum, vitae sagittis tellus pulvinar.
+                        Maecenas tempus diam sit amet ipsum interdum, vitae lobortis
+                        turpis facilisis. Vivamus neque velit, facilisis in vestibulum
+                        porta, convallis tempor est. Praesent volutpat maximus orci, in
+                        viverra mauris vehicula id. Nulla condimentum convallis feugiat.
+                        Vivamus aliquet aliquet ullamcorper. Vivamus non auctor metus.
+                    </li>
+                </ul>
+                <ul class="about-ul-skills">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript</li>
+                    <li>ReactJS</li>
+                    <li>PHP</li>
+                    <li>NodeJS</li>
+                    <li>MySQL</li>
+                    <li>UI/UX</li>
+                    <li>C#</li>
+                </ul>
+            </div>
+            <div class="about-right">
+                <div class="profile_pic">
+                    <img src="/images/profile.png" style="border-radius: 100%" class="profile_img" alt="" />
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <a id="experience"></a>
+        <div class="container-exp" data-aos="slide-up">
+            <h2>Experience</h2>
+            <div class="ux-vertical-tabs">
+                <div class="tabs">
+                    <button data-tab="tab1" class="active">Tab Example 01</button>
+                    <button data-tab="tab2">Tab Example 02</button>
+                    <button data-tab="tab3">Tab Example 03</button>
+                    <button data-tab="tab4">Tab Example 04</button>
+                    <button class="empty"></button>
+                </div>
+                <div class="maincontent">
+                    <div data-tab="tab1" class="tabcontent active">
+                        <div class="ux-text">
+                            <h4>Example Title 01</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                facilisis aliquet lectus eget pharetra. Nam feugiat vel nisi
+                                sit amet scelerisque. Pellentesque ut nibh ante. Donec
+                                malesuada ipsum id ex hendrerit pulvinar. Pellentesque ac
+                                neque libero. Curabitur ultricies ante quis magna congue
+                                efficitur. Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Maecenas consequat
+                                elit in mattis feugiat. Aenean tellus risus, accumsan sed
+                                ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
+                                nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
+                            </p>
+
+                            <p>
+                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
+                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
+                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
+                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
+                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
+                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
+                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
+                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
+                                consectetur mi. Phasellus gravida nulla vel venenatis
+                                molestie. Maecenas porta nulla vulputate, tristique urna id,
+                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
+                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
+                                convallis ex tincidunt velit mattis, blandit aliquet dui
+                                iaculis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-tab="tab2" class="tabcontent">
+                        <div class="ux-text">
+                            <h4>Example Title 02</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                facilisis aliquet lectus eget pharetra. Nam feugiat vel nisi
+                                sit amet scelerisque. Pellentesque ut nibh ante. Donec
+                                malesuada ipsum id ex hendrerit pulvinar. Pellentesque ac
+                                neque libero. Curabitur ultricies ante quis magna congue
+                                efficitur. Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Maecenas consequat
+                                elit in mattis feugiat. Aenean tellus risus, accumsan sed
+                                ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
+                                nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
+                            </p>
+
+                            <p>
+                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
+                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
+                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
+                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
+                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
+                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
+                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
+                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
+                                consectetur mi. Phasellus gravida nulla vel venenatis
+                                molestie. Maecenas porta nulla vulputate, tristique urna id,
+                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
+                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
+                                convallis ex tincidunt velit mattis, blandit aliquet dui
+                                iaculis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-tab="tab3" class="tabcontent">
+                        <div class="ux-text">
+                            <h4>Example Title 03</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                facilisis aliquet lectus eget pharetra. Nam feugiat vel nisi
+                                sit amet scelerisque. Pellentesque ut nibh ante. Donec
+                                malesuada ipsum id ex hendrerit pulvinar. Pellentesque ac
+                                neque libero. Curabitur ultricies ante quis magna congue
+                                efficitur. Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Maecenas consequat
+                                elit in mattis feugiat. Aenean tellus risus, accumsan sed
+                                ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
+                                nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
+                            </p>
+
+                            <p>
+                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
+                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
+                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
+                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
+                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
+                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
+                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
+                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
+                                consectetur mi. Phasellus gravida nulla vel venenatis
+                                molestie. Maecenas porta nulla vulputate, tristique urna id,
+                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
+                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
+                                convallis ex tincidunt velit mattis, blandit aliquet dui
+                                iaculis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div data-tab="tab4" class="tabcontent">
+                        <div class="ux-text">
+                            <h4>Example Title 04</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                                facilisis aliquet lectus eget pharetra. Nam feugiat vel nisi
+                                sit amet scelerisque. Pellentesque ut nibh ante. Donec
+                                malesuada ipsum id ex hendrerit pulvinar. Pellentesque ac
+                                neque libero. Curabitur ultricies ante quis magna congue
+                                efficitur. Orci varius natoque penatibus et magnis dis
+                                parturient montes, nascetur ridiculus mus. Maecenas consequat
+                                elit in mattis feugiat. Aenean tellus risus, accumsan sed
+                                ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
+                                nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
+                            </p>
+
+                            <p>
+                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
+                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
+                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
+                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
+                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
+                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
+                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
+                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
+                                consectetur mi. Phasellus gravida nulla vel venenatis
+                                molestie. Maecenas porta nulla vulputate, tristique urna id,
+                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
+                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
+                                convallis ex tincidunt velit mattis, blandit aliquet dui
+                                iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
         <a id="work"></a>
         <div class="work_container" data-aos="slide-up">
             <h2>Work</h2>
             <div class="work_wrap">
                 <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'
+                    <img src="https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80"
                         alt="" />
                     <div class="text">
                         <h1>Lorem ipsum.</h1>
                         <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
                         </p>
                     </div>
                 </div>
 
                 <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'
+                    <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80"
                         alt="" />
                     <div class="text">
                         <h1>Lorem ipsum.</h1>
                         <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
-                        </p>
-
-                    </div>
-                </div>
-
-                <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'
-                        alt="" />
-                    <div class="text">
-                        <h1>Lorem ipsum.</h1>
-                        <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
-                        </p>
-                    </div>
-                </div>
-                <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'
-                        alt="" />
-                    <div class="text">
-                        <h1>Lorem ipsum.</h1>
-                        <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
                         </p>
                     </div>
                 </div>
 
                 <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'
+                    <img src="https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80"
                         alt="" />
                     <div class="text">
                         <h1>Lorem ipsum.</h1>
                         <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
                         </p>
-
+                    </div>
+                </div>
+                <div class="card_tile">
+                    <img src="https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80"
+                        alt="" />
+                    <div class="text">
+                        <h1>Lorem ipsum.</h1>
+                        <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
+                        </p>
                     </div>
                 </div>
 
                 <div class="card_tile">
-                    <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'
+                    <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80"
                         alt="" />
                     <div class="text">
                         <h1>Lorem ipsum.</h1>
                         <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
-                        <p class="animate-text">Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
-                            bresaola pork chicken meatloaf. Flank sirloin strip steak prosciutto kevin
-                            turducken.
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card_tile">
+                    <img src="https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80"
+                        alt="" />
+                    <div class="text">
+                        <h1>Lorem ipsum.</h1>
+                        <h3 class="animate-text">More lorem ipsum bacon ipsum.</h3>
+                        <p class="animate-text">
+                            Bacon ipsum dolor amet pork belly tri-tip turducken, pancetta
+                            bresaola pork chicken meatloaf. Flank sirloin strip steak
+                            prosciutto kevin turducken.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+    </article>
+    <article>
         <a id="contact"></a>
         <div class="contact_container" data-aos="slide-up">
             <h2>Contact</h2>
-            <p>I'm currently looking for new opportunities in Norway, to code full-time or for freelance
-                projects. Let me
-                know if you got something for me!</p>
+            <p>
+                I'm currently looking for new opportunities in Norway, to code
+                full-time or for freelance projects. Let me know if you got
+                something for me!
+            </p>
             <a href="mailto:joaopaixao@outlook.pt" target="_blank" class="btn_contact">Get In Touch</a>
         </div>
-
-    </div>
+    </article>
 
     <footer>
         <div class="footer_container">Created by João Paixão © 2020</div>
     </footer>
-</div>
+    </div>
 
+    <!-- ___________________The social media icon bar___________________ -->
 
+    <div class="icon-bar">
+        <a href="https://codepen.io/yesisiddis" target="_blank" class="codepen"><i class="fa fa-codepen"></i></a>
+        <a href="https://www.instagram.com/johnncorleone/" target="_blank" class="instagram"><i
+                class="fa fa-instagram"></i></a>
+        <a href="https://github.com/yesisiddis" target="_blank" class="github"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/joaopedropaixao/" target="_blank" class="linkedin"><i
+                class="fa fa-linkedin"></i></a>
+    </div>
 
+    <!-- ___________________Back-To-Top Button___________________ -->
+    <div class="to-top">
+        <a class="back-to-top ion-chevron-up" href="#"></a>
+    </div>
 
-
-<!-- ___________________The social media icon bar___________________ -->
-
-<div class="icon-bar">
-    <a href="https://codepen.io/yesisiddis" target="_blank" class="codepen"><i class="fa fa-codepen"></i></a>
-    <a href="https://www.instagram.com/johnncorleone/" target="_blank" class="instagram"><i
-            class="fa fa-instagram"></i></a>
-    <a href="https://github.com/yesisiddis" target="_blank" class="github"><i class="fa fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/joaopedropaixao/" target="_blank" class="linkedin"><i
-            class="fa fa-linkedin"></i></a>
-</div>
-
-<!-- ___________________Back-To-Top Button___________________ -->
-<div class='to-top'>
-    <a class='back-to-top ion-chevron-up' href='#'></a>
-</div>
-
-<script src="tabs.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js'></script>
-<script src="./script.js"></script>
-<script>
-    AOS.init({
-        duration: 1200
-    });
-</script>
-<script src="./script.js" async defer></script>
-
-
+    <script src="tabs.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+    </script>
+    <script src="./script.js" async defer></script>
+</body>
 
 </html>
