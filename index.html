@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -35,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div id="navbar">
+        <div class="navbar">
             <a href="#contact" class="contact_btn">Contact</a>
             <a href="#work" class="work_btn">Work</a>
             <a href="#experience" class="exp_btn">Experience</a>
@@ -53,69 +52,72 @@
         <div class="wave"></div>
         <div class="wave2"></div>
     </div>
-    <article>
+    <article class="article-title">
         <div class="container-title" data-aos="fade-right">
             <p>Hi, my name is</p>
-            <p><span class="titlebig">João Paixão</span> and I'm a</p>
-            <p>
-                <span class="titlebig">Web Developer</span>
-            </p>
+            <p><span class="title">João Paixão.</span></p>
+            <p><span class="subtitle">I build cool stuff for the Internet.</span></p>
             <p id="presentation">
-                Portuguese guy, based in Stavanger, Norway. I enjoy bacalao, fjords,
-                northern lights and building cool stuff for the Internet. I design and
-                code. <span class="presentation_green">I learn and thrive.</span>
+                Portuguese guy, based in Stavanger, Norway. I like to code, design and learn a little more, everyday.
             </p>
+            <p><a href="#contact" class="removelinkdefault"><span class="challenges">CHALLENGES ACCEPTED!</span></a></p>
         </div>
     </article>
-    <article>
+
+    <article class="article-about">
         <a id="about"></a>
-        <div class="about_container" data-aos="slide-up">
-            <div class="about-left">
-                <h2>About</h2>
-                <ul>
-                    <li>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                        dictum mauris ligula, in ornare risus malesuada ac. Curabitur
-                        ligula turpis, consectetur ut quam vel, sollicitudin tincidunt
-                        orci. Fusce laoreet varius nulla, vitae aliquam enim tempus quis.
-                        Praesent sit amet risus mi.
-                    </li>
-                    <li>
-                        Nullam hendrerit dui bibendum mi vestibulum rutrum. Vivamus sed
-                        pharetra tortor. Suspendisse feugiat diam sagittis sodales
-                        sollicitudin.
-                    </li>
-                    <li>
-                        Cras felis sem, feugiat quis imperdiet vitae, aliquet vel eros.
-                        Duis cursus nulla ac leo bibendum, vitae sagittis tellus pulvinar.
-                        Maecenas tempus diam sit amet ipsum interdum, vitae lobortis
-                        turpis facilisis. Vivamus neque velit, facilisis in vestibulum
-                        porta, convallis tempor est. Praesent volutpat maximus orci, in
-                        viverra mauris vehicula id. Nulla condimentum convallis feugiat.
-                        Vivamus aliquet aliquet ullamcorper. Vivamus non auctor metus.
-                    </li>
-                </ul>
-                <ul class="about-ul-skills">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>ReactJS</li>
-                    <li>PHP</li>
-                    <li>NodeJS</li>
-                    <li>MySQL</li>
-                    <li>UI/UX</li>
-                    <li>C#</li>
-                </ul>
-            </div>
-            <div class="about-right">
-                <div class="profile_pic">
-                    <img src="/images/profile.png" style="border-radius: 100%" class="profile_img" alt="" />
+        <div class="container-abt" data-aos="slide-up">
+            <h2>About</h2>
+            <div class="container_pic">
+                <div class="pic">
+                    <picture><img src="/images/profile.png" style="border-radius: 100%" class="profile_img" alt="" />
+                    </picture>
+                </div>
+                <div class="maincontent">
+                    <div>
+                        <div class="ux-text">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum mauris
+                                    ligula,
+                                    in
+                                    ornare risus malesuada ac. Curabitur ligula turpis, consectetur ut quam vel,
+                                    sollicitudin
+                                    tincidunt orci. Fusce laoreet varius nulla, vitae aliquam enim
+                                    tempus quis. Praesent sit amet risus mi.</li>
+                                <li>Nullam hendrerit dui bibendum mi vestibulum rutrum. Vivamus sed pharetra tortor.
+                                    Suspendisse
+                                    feugiat diam sagittis sodales sollicitudin.</li>
+                                <li> Cras felis sem, feugiat quis imperdiet vitae, aliquet vel eros. Duis cursus
+                                    nulla
+                                    ac leo
+                                    bibendum, vitae sagittis tellus pulvinar. Maecenas tempus diam sit amet ipsum
+                                    interdum,
+                                    vitae lobortis turpis facilisis. Vivamus neque velit, facilisis
+                                    in vestibulum porta, convallis tempor est. Praesent volutpat maximus orci, in
+                                    viverra mauris
+                                    vehicula id. Nulla condimentum convallis feugiat. Vivamus aliquet aliquet
+                                    ullamcorper.
+                                    Vivamus non auctor metus.</li>
+                            </ul>
+                            <ul class="about-ul-skills">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>ReactJS</li>
+                                <li>PHP</li>
+                                <li>NodeJS</li>
+                                <li>MySQL</li>
+                                <li>UI/UX</li>
+                                <li>C#</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </article>
 
-    <article>
+    <article class="article-experience">
         <a id="experience"></a>
         <div class="container-exp" data-aos="slide-up">
             <h2>Experience</h2>
@@ -125,7 +127,6 @@
                     <button data-tab="tab2">Tab Example 02</button>
                     <button data-tab="tab3">Tab Example 03</button>
                     <button data-tab="tab4">Tab Example 04</button>
-                    <button class="empty"></button>
                 </div>
                 <div class="maincontent">
                     <div data-tab="tab1" class="tabcontent active">
@@ -142,23 +143,6 @@
                                 elit in mattis feugiat. Aenean tellus risus, accumsan sed
                                 ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
                                 nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
-                            </p>
-
-                            <p>
-                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
-                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
-                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
-                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
-                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
-                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
-                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
-                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
-                                consectetur mi. Phasellus gravida nulla vel venenatis
-                                molestie. Maecenas porta nulla vulputate, tristique urna id,
-                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
-                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
-                                convallis ex tincidunt velit mattis, blandit aliquet dui
-                                iaculis.
                             </p>
                         </div>
                     </div>
@@ -178,23 +162,6 @@
                                 ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
                                 nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
                             </p>
-
-                            <p>
-                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
-                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
-                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
-                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
-                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
-                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
-                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
-                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
-                                consectetur mi. Phasellus gravida nulla vel venenatis
-                                molestie. Maecenas porta nulla vulputate, tristique urna id,
-                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
-                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
-                                convallis ex tincidunt velit mattis, blandit aliquet dui
-                                iaculis.
-                            </p>
                         </div>
                     </div>
 
@@ -212,23 +179,6 @@
                                 elit in mattis feugiat. Aenean tellus risus, accumsan sed
                                 ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
                                 nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
-                            </p>
-
-                            <p>
-                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
-                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
-                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
-                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
-                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
-                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
-                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
-                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
-                                consectetur mi. Phasellus gravida nulla vel venenatis
-                                molestie. Maecenas porta nulla vulputate, tristique urna id,
-                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
-                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
-                                convallis ex tincidunt velit mattis, blandit aliquet dui
-                                iaculis.
                             </p>
                         </div>
                     </div>
@@ -248,30 +198,13 @@
                                 ligula id, mattis mattis enim. Suspendisse potenti. Ut felis
                                 nisl, ullamcorper id ipsum et, vulputate bibendum nisl.
                             </p>
-
-                            <p>
-                                Sed mollis a velit vel mattis. Mauris sit amet arcu quis nisl
-                                imperdiet egestas. Vivamus at tristique arcu, ut consequat
-                                libero. Donec risus arcu, dapibus non erat sit amet, consequat
-                                accumsan tortor. Fusce facilisis erat ante, ac mattis erat
-                                rutrum vel. Aenean consectetur egestas eros ut convallis. Nunc
-                                scelerisque augue ut urna pharetra placerat. Nunc volutpat
-                                metus sed faucibus feugiat. Duis in elit mauris. Pellentesque
-                                vel sem ipsum. Nunc et felis ultricies, euismod nisi eget,
-                                consectetur mi. Phasellus gravida nulla vel venenatis
-                                molestie. Maecenas porta nulla vulputate, tristique urna id,
-                                aliquam lorem. Nam vitae sodales lacus. Morbi imperdiet
-                                faucibus nisl, a laoreet leo posuere vitae. Pellentesque
-                                convallis ex tincidunt velit mattis, blandit aliquet dui
-                                iaculis.
-                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </article>
-    <article>
+    <article class="article-work">
         <a id="work"></a>
         <div class="work_container" data-aos="slide-up">
             <h2>Work</h2>
@@ -361,7 +294,7 @@
             </div>
         </div>
     </article>
-    <article>
+    <article class="article-contact">
         <a id="contact"></a>
         <div class="contact_container" data-aos="slide-up">
             <h2>Contact</h2>
@@ -377,7 +310,6 @@
     <footer>
         <div class="footer_container">Created by João Paixão © 2020</div>
     </footer>
-    </div>
 
     <!-- ___________________The social media icon bar___________________ -->
 
